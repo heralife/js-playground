@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>bmi계산기</h2>
+    <script>
+        var weight = prompt("몸무게를 입력해주세요");
+        var high = prompt("신장을 입력해주세요");
+        var kg = Number(weight);
+        var cm = Number(high);
+        var s_kg = (cm-100)*0.9;
+        var bmi = (kg/s_kg)*100;
+
+        if(bmi<80){
+        console.log("당신의 비만도는 "+bmi+" % 이며, 저체중입니다");
+        }
+        if(110<bmi<=120){
+        console.log("당신의 비만도는 "+bmi+" % 이며, 과체중입니다");
+        }
+        if(120<bmi<=130){
+        console.log("당신의 비만도는 "+bmi+" % 이며, 경도비만입니다");
+        }
+        if(150<bmi>200){
+        console.log("당신의 비만도는 "+bmi+" % 이며, 고도비만입니다");
+        }
+
+
+    </script>
+    
+</body>
+</html>
